@@ -29,7 +29,7 @@ public class CreateAccountTypeAggregate {
 
     }
 
-    @EventSourcingHandler//servis bus a gönderilercek verileri içerir// olay kaynak işleyicisi.
+    @EventSourcingHandler//servis bus a gönderilercek verileri içerir// olay kaynak işleyicisi.rabbit mq ve kafka ya bak.
     //iş kuralları
     //kuyruğa atıyor. Axon da event sourcing yapıyoruz.
     public void on(AccountTypeCreatedEvent accountTypeCreatedEvent) {
